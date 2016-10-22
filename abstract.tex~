@@ -1,0 +1,319 @@
+\documentclass[12pt]{article}
+
+%\usepackage{mathptm}  
+\usepackage{a4}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{amstext}
+\usepackage{amsmath}
+%\usepackage{fullpage}
+%\usepackage{parskip}
+\usepackage[colon]{natbib}
+%\usepackage{rotating}
+\usepackage{pdflscape}
+\usepackage{longtable}
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage[nomarkers,figuresonly]{endfloat}
+\usepackage{amsfonts}
+\usepackage{pifont}
+\usepackage{authblk}
+\usepackage{epstopdf}
+\usepackage{multirow}
+\usepackage{amsfonts}
+\usepackage{amssymb} %maths symbols
+
+\textwidth 160mm
+\textheight 235mm
+\oddsidemargin 0mm
+\topmargin -15mm
+\baselineskip 13pt
+\parskip 1pc
+\parindent 0pc
+
+\pagestyle{fancy}
+\cfoot{\thepage}
+
+\renewcommand{\headrulewidth}{0.2pt}
+\renewcommand{\footrulewidth}{0.2pt}
+
+\newcommand\Bo{\mbox{\textit{Bo}}}  % Bond number
+\newcommand\Ca{\mbox{\textit{Ca}}} %Capillary number
+
+\definecolor{darkred}{rgb}{0.80,0.00,0.05}
+\definecolor{blue}{rgb}{0.00,0.00,0.95}
+\definecolor{darkgreen}{rgb}{0.00,0.60,0.0}
+\definecolor{gray}{rgb}{0.95,0.9,0.9}
+
+\usepackage{listings}
+\lstset{language=C++}
+\lstset{backgroundcolor=\color{gray}}
+\lstset{breaklines=true}
+\lstset{basicstyle=\ttfamily\small}
+\lstset{showstringspaces=false}
+\lstset{keywordstyle=\color{blue}\bfseries}
+\lstset{commentstyle=\ttfamily\small\color{darkgreen}}
+\lstset{identifierstyle=\color{darkred}\bfseries}
+\lstset{numbers=left,numberstyle=\tiny}
+\lstset{columns=fixed,basewidth=0.45em}
+
+\DeclareMathOperator\erf{erf}
+
+\linespread{1}
+
+\title{The initiation and evolution of transverse dunes: A literature review}
+\date{}
+\author{Paul Jarvis}
+
+\begin{document}
+\thispagestyle{empty}
+
+\maketitle
+
+\section{Introduction}
+\label{sec:intro}
+
+\section{Fluid flow}
+\label{sec:fluid}
+
+The first consideration when considering sedimentary processes is the driving flow. Although it is possible for sediment transport to occur in laminar flow \citep{Charru02, Charru04, Mouilleron09}, the majority of research into the dynamics of ripples and dunes has considered turbulent conditions \citep{Andreotti02, Kroy02, Langlois07, Wierschem08, Franklin11, Charru12, Andreotti12, Franklin15}, a reflection of the fact that these are relevant to the majority of natural systems. Therefore, we here summarise the fundamentals of turbulent flow, before discussing descriptions of wall bounded turbulent flow, both over flat and wavy surfaces.
+
+\subsection{Turbulence}
+\label{subsec:turb}
+
+The flow of any incompressible Newtonian fluid is described by the Navier-Stokes (NS) equation and the incompressibility relation:
+
+\begin{equation}
+\label{equ:NS_equ}
+\frac{\partial \boldsymbol{u}}{\partial t} + (\boldsymbol{u} \cdot \boldsymbol{\nabla}) \boldsymbol{u} = -\frac{\boldsymbol{\nabla} p}{\rho} + \nu \nabla^{2} \boldsymbol{u};
+\end{equation}
+
+and
+
+\begin{equation}
+\label{equ:cont}
+\boldsymbol{\nabla} \cdot \boldsymbol{u}.
+\end{equation}
+
+These describe conservation of momentum and mass respectively where $\boldsymbol{u}(\boldsymbol{x},t)$ is the velocity field, $p(\boldsymbol{x},t)$ the pressure field, $\rho$ the fluid density and $\nu$ the kinematic viscosity of the fluid, whilst $\boldsymbol{x}$ and $t$ are the spatial and temporal variables. If we define the components of the stress tensor $\boldsymbol{\tau}$ to be
+
+\begin{equation}
+\label{equ:stress}
+\tau_{ij} = \rho \nu \left(\frac{\partial u_{i}}{\partial x_{j}} + \frac{\partial u_{j}}{\partial x_{i}}\right),
+\end{equation}
+
+then the NS equation can be re-written as
+
+\begin{equation}
+\label{equ:NS_stress}
+\rho\left(\frac{\partial \boldsymbol{u}}{\partial t} + (\boldsymbol{u} \cdot \boldsymbol{\nabla}) \boldsymbol{u}\right) = -\boldsymbol{\nabla} p + \boldsymbol{\nabla} \cdot \boldsymbol{\tau}.
+\end{equation}
+
+It is useful to define the quantity vorticity, $\boldsymbol{\omega} = \boldsymbol{\nabla} \times \boldsymbol{u}$ which provides a measure of the local angular momentum of fluid elements. Vorticity is a useful quantity for a number of reasons. Firstly, it can be shown to obey a simpler equation than $\boldsymbol{u}$,
+
+\begin{equation}
+\label{equ:vort_equ}
+\frac{\partial \boldsymbol{\omega}}{\partial t} + (\boldsymbol{u} \cdot \boldsymbol{\nabla}) \boldsymbol{\omega} = (\boldsymbol{\omega} \cdot \boldsymbol{\nabla}) \boldsymbol{u} + \nu \nabla^{2} \boldsymbol{\omega}.
+\end{equation}
+
+Secondly, it can be shown for two-dimensional flows that vorticity must be conserved within flow interiors; it cannot be created or destroyed but only advected or diffused. Vorticity can only be created at the boundaries of fluid domains, before being transferring into the interior. The origin of this creation is the strong velocity gradients within boundary layers. 
+
+The third use of vorticity is that is provides a starting point for a possible definition of turbulence. Turbulence is a poorly defined quantity. However, it is possible to picture turbulent eddies as regions of vorticity, with turbulence being an evolving field of eddies \citep{Davidson04}. Here we will use the following definition of turbulence from \citet{Corrsin61}, which has been modified by \citet{Davidson04}: ``Incompressible fluid turbulence is a spatially complex distribution of vorticity which advects intself in a chaotic manner in accordance with (\ref{equ:vort_equ}). The vorticity field is random in both space and time, and exhibits a wide and continuous distribution of length and time scales''. 
+
+With a definition of turbulence, we can now proceed with a description of turbulent flow. This is achieved by decomposing $\boldsymbol{u}$, $p$ and $\boldsymbol{\tau}$ into mean and fluctuation fields e.g. $\boldsymbol{u} = \boldsymbol{\bar{u}} + \boldsymbol{u'}$ where the bar denotes the mean field and the prime the fluctuation. The time-averaged NS equation is then shown to be given by
+
+\begin{equation}
+\label{equ:TA-NS}
+\rho \left(\frac{\partial \bar{u_{i}}}{\partial t} + \bar{u_{j}} \partial_{j} \bar{u_{i}}\right) = - \partial_{i} \bar{p} + \partial_{i}(\bar{\tau_{ij}} + \tau_{ij}^{\text{R}}) 
+\end{equation}
+
+where the Reynolds stresses $\tau_{ij}^{\text{R}} = -\rho \bar{u_{i}'u_{j}'}$. Additionally, time-averging the incompressibility relation yields both $\partial_{i} \bar{u_{i}} = 0$ and $\partial_{i} u_{i}' = 0$. Reynolds stresses are not stresses in a physical sense. Physical stresses correspond to momentum fluxes between different fluid particles. Reynolds stresses correspond to momentum flux between the mean and fluctuation fields. 
+
+With this definition of Reynolds stresses, it is possible to manipulate the equations of motion to obtain an equation for them. This is algerbraically arduous and will not be repeated here but the end result contains a term $\partial_{k} (\bar{u_{i}' u_{j}' u_{k}'})$. The triple correlations here are unknown, but deriving an equation for them leads to a further set of unknowns $\bar{u_{i}' u_{j}' u_{k}' u_{l}'}$. The governing equations for these involves fifth-order correlations and so on. Hence, this statistical description of turbulence is undetermined - there are more unknowns than equations. This is called the closure problem. Numerous empirical models have been developed for a closure relation which completes the system of equations. The most widely used are eddy viscosity models, based on the principle that dissipation of momentum from the mean flow to the fluctuations by the Reynolds stresses is analogous to dissipation of momentum by viscous stresses. Hence, an analogous eddy viscosity $\nu_{\text{t}}$ can be defined as \citep{Boussinesq87}
+
+\begin{equation}
+\label{equ:eddy_viscos}
+\tau_{ij}^{\text{R}} = \rho \nu_{\text{t}} (\partial_{j} \bar{u_{i}} + \partial_{i} \bar{u_{j}}) - \frac{\rho \bar{u_{k}' u_{k}'} \delta_{ij}}{3}.
+\end{equation}
+
+How $\nu_{\text{t}}$ is determined depends on the geometry of the flow. Since we are considering wall-bounded two-dimensional flows the most common method is to use Prandtl's mixing length model \citep{Prandtl25} (an analogue to the kinetic theory of viscosity) which gives
+
+\begin{equation}
+\label{equ:mix_length}
+\nu_{\text{t}} = l_{\text{m}}^{2} |\partial_{z} \bar{u_{x}}|,
+\end{equation}
+
+where $l_{\text{m}}$ is the mixing length which can be determined empirically. Whilst the model relies on dubious asumptions, it has been shown to be very succesful for one-dimensional shear flows. 
+
+\subsection{Wall-bounded flow}
+\label{subsec:wall}
+
+We will initially consider turbulent flow over a flat, smooth, solid surface, with the mean flow directed in the x-direction, and the z-direction denoting the upward normal to the surface. The mean velocity in the interior of the flow (outside the boundary layer) is $\boldsymbol{\bar{u}} = (U_{0}, 0, 0)$ and the flow is unbounded as $z \to \infty$. The boundary layer thickness $\delta$ can be defined as the value of $z$ at which $\bar{u_{x}}(z) = 0.99 U_{0}$, although other measures exist \citep{Pope00}. A significant amount of work has gone into studying the structure of this boundary layer. It has been postulated \citep{Prandtl25}, and since verified both experimentally \citep{Wei89}and numerically \citep{Kim87}, that there exists an inner layer close to the wall ($y / \delta \ll 1$) where $\bar{u}(x)$ depends on the viscous scales and is independent of $\delta$ and $U_{0}$. The viscous lengthscale is defined as 
+
+\begin{equation}
+\label{equ:viscos_length}
+\delta_{\nu} = \frac{\nu}{u_{\tau}},
+\end{equation}
+
+where $u_{\tau}$ is the friction velocity, defined as
+
+\begin{equation}
+\label{equ:frict_vel}
+u_{\tau} = \left(\frac{\tau_{\text{w}}}{\rho}\right)^{1/2},
+\end{equation}
+
+and $\tau_{w}$ is the shear stress exerted on the wall. This postulate can be used to find the velocity profile within the inner layer. Defining $y^{+} = y / \delta_{\nu}$, it can be shown that for small $y^{+}$ there exists a viscous sublayer where \citep{Pope00}
+
+\begin{equation}
+\label{equ:sublayer_vel}
+\bar{u}_{x}(z) = \frac{u_{\tau} z}{\delta_{\nu}},
+\end{equation}
+
+and for $y^{+} \gg 1$, there is a so called log-law region \citep{vonKarman30} where
+
+\begin{equation}
+\label{equ:log_law}
+\bar{u}_{x}(z) = \frac{u_{\tau}}{\kappa} \ln\left(\frac{z}{z_{0}}\right).
+\end{equation}
+
+Here $\kappa$ is the von K{\'a}rm{\'a}n constant and $z$ is a constant of integration called the hydrodynamical roughness, found by matching to the profile in the viscous sublayer. Experimental and numerical studies have shown that the viscous sublayer typically extends to $y^{+} < 5$ and the log-law region for $y^{+} > 30$, $y / \delta < 0.3$ \citep{Kim87, Wei89}, with $\kappa \approx 0.4$. The transition between these two parts of the inner layer is called the buffer layer. Beyond the inner layer, there exists an outer layer, which has predominantly been described empirically \citep{Pope00}.
+
+The mixing length for wall-bounded flow is given by \citep{Pope00}
+
+\begin{equation}
+\label{equ:smooth_mix_length}
+l_{\text{m}} = \kappa z \left[1 - \exp\left(\frac{z}{\alpha \delta_{\nu}}\right)\right],
+\end{equation}
+
+where $\alpha \approx 25$ is the van Driest number. 
+
+For a rough surface, the roughness can be described by a bed of grains of characteristic diameter $d$ fixed at $z = 0$ \citep{Charru13}. For $d / \delta_{\nu} \lesssim 5$ the effect of the roughness in the log-law region is negligible, as the disturbance to the flow is contained within the viscous sublayer. However, at larger $d$, the flow is said to be hydrodynamically rough, and experimental observations are used to estimate the hydrodynamic roughness \citep{Bagnold41, Kamphuis74}. Various works use $l_{m} = \kappa(z + z_{0})$ as the mixing length for a hydrodynamically rough flow \citep{Fourriere10}.
+
+\subsection{Flow over a perturbed profile}
+\label{subsec:obst}
+
+We now consider the flow over a sinusoidal profile $\zeta = \zeta_{0} \cos (k x)$, where $\zeta_{0}$ is the amplitude of the perturbations to the surface, and $k$ is the wavenumber. If the gradient of the profile is small ($k \zeta_{0} \ll 1$), then the resultant perturbation to the flow will be linear. For example, the resultant perturbation to the shear-stress in the x-direction at the fluid surface can be expressed as \citep{Kroy02, Charru13}
+
+\begin{equation}
+\label{equ:stress_pert}
+\tau_{\text{b}} = \frac{\hat{\tau} e^{i k x} + \hat{\tau}^{*} e^{-i k x}}{2}, \quad \text{where} \quad \hat{\tau} = \tau_{\text{w}} (A + i B) k \zeta_{0}.
+\end{equation} 
+
+The periodic functional form of $\tau_{\text{b}}$ is due to the periodic nature of the solid boundary. The contribution from $A$ is in-phase with the surface disturbance and that from $B$ is in quadrature. 
+
+Depending on the relative values of the different length scales in the problem ($k^{-1}$, $\delta_{\nu}$), the perturbation to the flow occurs in different hydrodynamic regimes. For the case that the flow disturbance is confined to the viscous sublayer ($k \delta_{\nu} ll 1$), the flow disturbance due to the surface perturbations is laminar, and has a two-layered structure \citep{Charru13}: an inner viscous layer, and an outer inertial layer. Remember, both of these layers are within the viscous sublayer and are different from the much larger inner and outer layers that describe the coarser structure of the general boundary layer. The shear-stress on the solid surface can be evaluated, and both $A$ and $B$ in equation (\ref{equ:stress_pert}) are found to both be positive. This means the maximum of the shear stress is always located upstream of the crests \citep{Benjamin58, Charru00, Charru13}. 
+
+The other possibility is that the flow disturbance extends beyond the viscous sublayer ($k \delta_{\nu} > 1$). It can again be shown that the flow disturbance has a multi-layered structure, but here the perturbation is turbulent. \citet{Jackson75} and \citet{Sykes80} considered two-layers: a thin, turbulent layer outside the viscous sublayer dominated by gradients in Reynolds stresses, overlain by an inertia-dominated layer that continued up to the outer layer of the boundary layer. This description was later improved wth the inclusion of a middle layer which improved matching \citep{Hunt88, Belcher98}. As for small peaks, the maximum shear stress is again found upstream of the crests \citep{Hunt88, Belcher98, Kroy02, Charru13}.
+
+As well as the laminar and turbulent regime, there is a transitional regime where neither viscous effects nor turbulent fluctuations can be ignored. Thus far, only empirically verified simple parameterisations of the viscous sublayer thickness have been used in describing this regime \citep{Abrams85, Frederick88}, and a true physical understanding of the behaviour is lacking.
+
+
+\subsubsection{Other flow features}
+\label{subsubsec:other_flow}
+
+Clearly, the above description of the effect of shallow, sinusoidal disturbances to the wall doesn't completely describe flow regimes for natural bedforms. Perhaps the most obvious difference involves the shape of the obstacle. The typical, two-dimensional dune shape is asymmetric, with a long upstream (stoss) side and a shorter downstream (lee) side. The reasons for this shape will be discussed below but it is clear that any model of flow over bedforms must account for this. Numerical investigations have studied the response of flow to obstacles of different shapes \citep{Richards81, Yue06} and, as long as obstacle slopes are small, linear descriptions of flow response are still valid. 
+
+As slopes become steeper ($k \zeta_{0} \approx 0.1$), non-linear effects become important. To account for these it is neccessary to generalise equation (\ref{equ:stress_pert}) to include higher order terms in the expansion,
+
+\begin{equation}
+\label{equ:gen_shear_stress}
+\tau_{\text{b}} = \frac{1}{2} \sum_{n = 1}^{N} (\hat{\tau_{n}} e^{i k x} + \hat{\tau_{n}}^{*} e^{-i k x})^{n}, \quad \text{where} \quad \hat{\tau_{n}} = \tau_{0}(A_{n} + i B_{n}) (k \zeta_{0}).
+\end{equation}
+
+This reduces to equation (\ref{equ:stress_pert}) for the case $N = 1$. Some weakly non-linear analysis have been performed, using a small number of terms to evaluate the perturbation to the flow field \citep{Caponi82, Andreotti09}, and these successfully predict changes to the velocity profile and surface shear stress for $k \zeta_{0} \lesssim 0.3$ \citep{Kuzan89}. Of particular interest is the deviation to the shear stress profile as higher harmonics become significant \citep{Zilker77, Richards81}. 
+
+Further increasing $k \zeta_{0}$ leads to the occurence of a strongly nonlinear feature called flow separation. This occurs as the flow passes over the crest of an obstacle, and slows down as the flow depth increases. If the extent of slowing down in the fluid adjacent to the surface is much greater than in the overlying fluid, this can lead to the formation of a recicrulation bubble behind the obstacle (figure~\ref{fig:flow_sep}). The streamlines separate from the surface at the point S and reattach at R. 
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{../figures/flow_separation.png}
+  \caption{Schematic showing flow separation behind an obstacle. Streamlines separate from the solid surface at point S and rejoin at R, forming a recirculation zone bounded by the solid surface and the red curve (called the separation streamline).}
+  \label{fig:flow_sep}
+\end{figure}
+
+Recirculation bubbles have been observed in numerous experimental and numerical studies of flow over wavy boundaries, with focus on the conditions that lead to flow separation \citep{Zilker79, Richards81, Kuzan89}, the location, size and shape of the recirculation bubble \citep{Buckles84}, and the effect of the bubble of the surface shear stress \citep{Finnigan90, Henn99}. It is also important to note that for turbulent flows, the turbulent fluctuations mean that, although the mean flow may be steady, the instantaneous flow varies, meaning the positions of the separation and reattachment points may change with time \citep{Zilker79}. This presents a challenge when defining the extent of the recirculation bubble for turbulent flows. To handle this, the intermittency $\gamma(x,z)$ is defined as the fraction of the time that the flow is directed in the positive x direction \citep{Simpson81}. Contours of intermittancy can then be used to define the region of reverse flow and the recirculation bubbles \citep{Buckles84}. 
+
+At the separation point, a layer of high vorticity is ejected from the boundary into the interior of the flow \citep{Yue06}. If the wavelength of the obstacles is shorter than the distance over which this vorticity disperses, then vertical velocity profiles in the flow can become highly chaotic and far removed from the simple analytical descriptions of wall flow. 
+
+\section{Types of sedimentary bedforms}
+\label{sec:sed_bed}
+
+There are a variety of different types of sedimentary bedforms found in nature, with the diversity reflecting the hugely variable conditions under which erosion and sedimentation processes occur. Most generally, there are two types of environment in which bedforms can be found: subaerial; and subaqueous. Subaerial bedforms result from the flow of air over a granular medium, such as a desert, beach, snow depsoti or volcanic ash deposit. Subaqueous bedforms are created by the action of water, and can be found on river-beds, shallow coastel regions, or deeper continental shelves. Within this hierarchy, further variability in shape and size of bedform originates from spatial and temporal variations in flow-speed, flow-depth, particle size, particle density and local topography. Examples of different types of bedforms are shown in figure~\ref{fig:bedforms}.
+
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{../figures/barchan.png}
+        \caption{}
+        \label{fig:barchan}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{../figures/transverse_dunes.png}
+        \caption{}
+        \label{fig:trans}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{../figures/subaqueous_ripples.png}
+        \caption{}
+        \label{fig:subaq_rip}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{../figures/San_Fran.png}
+        \caption{}
+        \label{fig:SF}
+    \end{subfigure}
+
+    \caption{Examples of bedforms. a) A field of barchan dunes from Morocco. \citep{Duran11}. b) Transverse dune field in the East Taklamakan desert, China \citep{Gao15}. Subaqueous ripples in Zion National Park, USA \citep{Andreotti12}. d) Large subaqueous dunes in San Francisco Bay, USA \citep{Barnard06}.\label{fig:bedforms}}
+\end{figure}
+
+The diverse range of environments and conditions in which bedforms exist, and the extensive variability in their morphologies means their classification has historically been inconsistent \citep{Ashley90}. The term `ripple' has typically been used to describe small structures of $O(1 \text{cm})$ with `dunes' used for larger deposits $ > O(10 \text{cm})$ \citep{Julien95}. However, these terms have often been used interhcangably in the literature. In an attempt to develop a formal classification, it has been noted that size distributions of both subaerial and subaqueous bedforms contain two distinct populations with different modes \citep{Lancaster88, Ashley90}, with the smaller group assigned as ripples, and the larger as dunes. This is a phenomenological classification founded in field observations. \citet{Andreotti12} used a mechanistic classification; ripples were defined as having a wavelength much smaller than the flow depth, and formed from an instability of the sediment surface. Dunes had a wavelength comparable to the flow depth, and formed from the merging of dunes, a process called pattern coarsening. Whether these definitions are equivalent remains unknown, but since we are here investigating bedforms from a mechanistic viewpoint, we will use the definition of \citet{Andreotti12}.
+
+The dunes and ripples considered here will all be transverse. Flow is directed in the x-direction and the bed geometry can be completely described by a curve in a vertical plane. 
+
+\section{Modes of sediment transport}
+\label{sec:sed_trans}
+
+In order for an overlying fluid to displace any sediment, it is neccessary for the shear stress exerted on the bed surface to be sufficient to lift a particle up and over its neighbours. Hence, the lift force provided by the flow must be sufficient to overcome gravity. This balance is quantified through the Shields number
+
+\begin{equation}
+\label{equ:Shields}
+\Theta = \frac{\tau}{(\rho_{\text{p}} - \rho_{\text{f}}) g d},
+\end{equation}
+
+where $\tau$ is the surface shear stress, $\rho_{\text{p}}$ and $\rho_{\text{f}}$ are the densities of the particles and fluid respectively, $g = 9.81$ m s$^{-2}$ is the acceleration due to gravity and $d$ is the particle diameter. Hence, there is some critical value of the Shields number at which motion becomes possible.
+
+Broadly, there are three mechanisms describing how sediment can be transported by an overlying fluid \citep{Bagnold41}. For Shields numbers just above the threshold for motion, bedload transport (reptation) will occur, whereby particles slide and roll across the surface. With increasing flow velocity, these particles can be lift higher into the flow, and `hop' across the bed following ballistic trajectores, a process called saltation. Once the size of turbulent fluctuations in the vertical fluid velocity are comparable to the settling velocity of the particles, they can become suspended in the fluid and are transported as suspended load. For the purpose of the rest of this review, all sediment transport can be assumed to occur through reptation or saltation unless otherwise specified. 
+
+There is a finite limit to the amount of sediment a given flow can transport. This is quantified through the saturated sediment flux $q_{\text{sat}}$ \citep{Bagnold41, Owen64}. Therefore, there must also be a lengthscale $L_{\text{sat}}$ and/or timescale $T_{\text{sat}}$ over which this saturation can be achieved. Expressions for $q_{\text{sat}}$ scales depend on the mechanics of transport but a general partial differential equation for the sediment flux $q$ can be given as \citep{Charru13}
+
+\begin{equation}
+\label{equ:sed_flux}
+T_{\text{sat}} \frac{\partial q(x,t)}{\partial t} + L_{\text{sat}} \frac{\partial q(x,t)}{\partial x} = q_{\text{sat}} - q(x,t) .
+\end{equation}
+
+Since the timescale of sediment transport is muh shorter than bed evolution, the first term can typically be neglected. As mentioned above, the expression for $L_{\text{sat}}$ depends on the mechanism of transport \citep{Andreotti12}. For suspended transport, the length corresponds to the distance a particle will travel before settling out, $L_{\text{sat}} \propto U H / V_{\text{fall}}$, where $U$ is the mean flow velocity, $V_{\text{fall}}$ is the settling velocity of the particle and $H$ is the depth of the flow \citep{Claudin11}. A similar principle can be used to determine the saturation length for bedload transport. Assuming the transport takes place within a layer of lengthscale $d$, the $L_{\text{sat}} \propto U d / V_{\text{fall}}$ \citep{Charru06}. For saltation, the lengthscale can be considered as the length needed for a particle to reach its equilibrium velocity \citep{Andreotti02}, for which it can be shown $L_{\text{sat}} \propto \rho_{\text{p}} d / \rho_{\text{f}}$. Despite the different transport mechanisms having different saturation lengths, $L_{\text{sat}}$ enters into the dynamics identically for all three cases, allowing the same methods to be used to study bedforms regardless of the transport mechanism.
+
+
+\section{Inititation of transverse structures}
+\label{sec:init}
+
+\section{Coarsening}
+\label{sec:coarse}
+
+\section{Open questions}
+\label{sec:openQs}
+
+
+\bibliographystyle{plainnat}
+
+\bibliography{lit_review}
+
+\end{document}
