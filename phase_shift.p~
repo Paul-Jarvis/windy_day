@@ -1,0 +1,19 @@
+#Gnuplot scrip to plot example of the phase shift between topography and shear stress
+
+set terminal epslatex
+
+set output 'phase_shift.png'
+
+set multiplot layout 2, 1 
+
+set xrange[-30:30]
+
+unset ytics
+
+unset key
+
+plot cos(x + 1)
+
+plot cos(x)
+
+unset multiplot

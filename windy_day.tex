@@ -90,6 +90,7 @@
 \usepackage{amsmath}
 
 \newcommand\Bo{\mbox{\textit{Bo}}}  % Bond number
+\newcommand\Rey{\mbox{\textit{Re}}}  % Bond number
 
 \def\Xint#1{\mathchoice
 {\XXint\displaystyle\textstyle{#1}}%
@@ -226,7 +227,259 @@
 %-----------------------------------------------
 
 \begin{frame}
-  \frametitle{Aeolian and subaqueous bedforms}
+  \frametitle{Sediment transport}
+
+  \vspace{-0.5cm}
+
+  If $\tau > \tau_{\text{c}}$ then transport is possible
+
+
+  \begin{columns}[t]
+
+    \begin{column}{0.3\textwidth}
+
+      \centering
+
+      Mass conservation 
+
+      \vspace{-0.7cm}
+
+      \begin{equation}
+        \frac{\partial z}{\partial t} + \frac{\partial q}{\partial x} \nonumber
+      \end{equation}
+
+    \end{column}
+
+    \begin{column}{0.3\textwidth}
+
+      \centering
+
+      Sediment transport
+
+      \vspace{-0.7cm}
+
+      \begin{equation}
+        q_{\text{sat}} = q_{\text{sat}}(\tau - \tau_{\text{c}}) \nonumber
+      \end{equation}
+
+    \end{column}
+
+    \begin{column}{0.3\textwidth}
+
+      Transient relaxation
+
+      \vspace{-0.7cm}
+
+      \begin{equation}
+        L_{\text{sat}} \frac{\partial q}{\partial x} = q_{\text{sat}} - q \nonumber
+      \end{equation}
+
+    \end{column}
+
+  \end{columns}
+
+  \vspace{0.5cm}
+
+  General equations valid for different modes of transport
+
+  \vspace{-1cm}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\textwidth}
+
+      \begin{figure}
+        $$\includegraphics[width=0.4\paperwidth]{sed_trans.png}$$
+      \end{figure}
+
+
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+
+      \vspace{1cm}
+
+      Differences:
+
+      \begin{itemize}
+      \item Functional form of transport law \\
+      \item Physical origin of $L_{\text{sat}}$ \\
+      \end{itemize}
+
+      Mode of transport determined by flow and particle Reynolds numbers
+
+      \vspace{-0.1cm}
+
+      \begin{equation}
+        \Rey = \frac{U D}{\nu}, \quad \Rey_{\text{p}} = \frac{U d}{\nu} \nonumber
+      \end{equation}
+
+    \end{column}
+
+  \end{columns}
+
+
+
+
+\end{frame}
+%-----------------------------------------------
+
+\begin{frame}
+  \frametitle{Aeolian and subaqueous comparison}
+
+  \vspace{-1cm}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\textwidth}
+
+      \centering
+
+      Aeolian dunes:
+
+      \begin{itemize}
+      \item Typical wind speed 
+        \begin{itemize}
+        \item $U \sim O(10)$ m s$^{-1}$
+        \end{itemize}
+      \item Kinematic viscosity of air 
+        \begin{itemize}
+        \item $\nu \sim O(10^{-5})$ m$^{2}$ s$^{-1}$
+        \end{itemize}
+      \item Grain size 
+        \begin{itemize}
+        \item $D \sim O(10^{-3})$ m
+        \end{itemize}
+      \end{itemize}
+
+      \begin{equation}
+        \Rey_{\text{p}} \sim \frac{(10 \text{m s}^{-1})(10^{-3} \text{m})}{10^{-5} \text{m}^{2} \text{ s}^{-1}} = 10^{3} \nonumber
+      \end{equation}
+
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+
+      \centering
+
+      Subaqueous ripples:
+
+      \begin{itemize}
+      \item Typical flow speed 
+        \begin{itemize}
+        \item $U \sim O(1)$ m s$^{-1}$
+        \end{itemize}
+      \item Kinematic viscosity of water 
+        \begin{itemize}
+        \item $\nu \sim O(10^{-6})$ m$^{2}$ s$^{-1}$
+        \end{itemize}
+      \item Grain size 
+        \begin{itemize}
+        \item $D \sim O(10^{-3})$ m
+        \end{itemize}
+      \end{itemize}
+
+      \begin{equation}
+        \Rey_{\text{p}} \sim \frac{(1 \text{m s}^{-1})(10^{-3} \text{m})}{10^{-6} \text{m}^{2} \text{ s}^{-1}} = 10^{3} \nonumber
+      \end{equation}
+
+    \end{column}
+
+  \end{columns}
+
+  \vspace{1cm}
+
+  Similar $\Rey_{\text{p}}$ suggest subaqueous flume experiments can provide insights on aeolian dunes
+
+\end{frame}
+%-----------------------------------------------
+
+\begin{frame}
+  \frametitle{Initiation of transverse bedforms}
+
+  \vspace{-1cm}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.7\textwidth}
+
+      \centering
+
+      \resizebox{0.9\textwidth}{!}{\Large \input{phase_shift.tex}}
+
+    \end{column}
+    
+    \begin{column}{0.3\textwidth}
+
+      \centering
+
+      \vspace{1cm}
+
+      $L_{\text{sat}}$ delays transport response
+
+      \vspace{1cm}
+
+      Phase shift between topography and shear stress
+      
+    \end{column}
+
+
+  \end{columns}
+
+  \vspace{1cm}
+
+  \centering 
+
+  Causes small disturbances to grow and propagate
+
+  \vspace{0.5cm}
+
+  Initial $\lambda$ set by saturation length
+
+\end{frame}
+%-----------------------------------------------
+
+\begin{frame}
+  \frametitle{Experimental system - Annular flume}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      \vspace{-1.8cm}
+
+      \begin{figure}
+        $$\includegraphics[width=0.45\paperwidth]{annular_flume.png}$$
+      \end{figure}
+
+      \vspace{-1.8cm}
+
+      \begin{figure}
+        $$\includegraphics[width=0.45\paperwidth]{filled_annular_flume.png}$$
+      \end{figure}
+
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      No need to replenish - can perform long term experiments
+
+      \vspace{1cm}
+
+      Small gap-radius ratio leads to transverse bedforms
+
+    \end{column}
+
+  \end{columns}
+\end{frame}
+%-----------------------------------------------
+
+\begin{frame}
+  \frametitle{Experimental system}
+
+  \begin{figure}
+    $$\includegraphics[width=0.5\paperwidth]{filled_annular_flume.png}$$
+  \end{figure}
 
 
 \end{frame}

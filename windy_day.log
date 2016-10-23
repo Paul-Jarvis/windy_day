@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.2)  22 OCT 2016 17:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.2)  23 OCT 2016 16:54
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **windy_day.tex
 (./windy_day.tex
@@ -749,12 +749,12 @@ e
 Package: bigints 2010/02/15 Writing big integrals
 Package bigints Info: This is Bigints by Merciadri Luca. on input line 5.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 128.
+LaTeX Font Info:    Try loading font information for U+msa on input line 129.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 128.
+LaTeX Font Info:    Try loading font information for U+msb on input line 129.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -762,26 +762,26 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <DAMTP_logo.png, id=11, 183.5658pt x 67.33154pt>
 File: DAMTP_logo.png Graphic file (type png)
  <use DAMTP_logo.png>
-Package pdftex.def Info: DAMTP_logo.png used on input line 138.
+Package pdftex.def Info: DAMTP_logo.png used on input line 139.
 (pdftex.def)             Requested size: 109.2597pt x 40.07661pt.
 
 (./windy_day.aux)
 \openout1 = `windy_day.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -832,7 +832,7 @@ LaTeX Font Info:    ... okay on input line 148.
 \everyMPtoPDFconversion=\toks41
 ) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 148.
+Package hyperref Info: Link coloring OFF on input line 149.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -842,56 +842,56 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count167
 )
-LaTeX Info: Redefining \ref on input line 148.
-LaTeX Info: Redefining \pageref on input line 148.
-LaTeX Info: Redefining \nameref on input line 148.
+LaTeX Info: Redefining \ref on input line 149.
+LaTeX Info: Redefining \pageref on input line 149.
+LaTeX Info: Redefining \nameref on input line 149.
 
 (./windy_day.out) (./windy_day.out)
 \@outlinefile=\write5
 \openout5 = `windy_day.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 148.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 149.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 148.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 149.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 148.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 148.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 149.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 148.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 149.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 148.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 148.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 149.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 149.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 148.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 149.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 148.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 148.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 149.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 149.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 148.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 149.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 148.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 148.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 149.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 149.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 148.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 149.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 148.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 149.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 148.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 149.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 148.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 149.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 148.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 149.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 148.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 149.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 148.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 149.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 148.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 149.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 148.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 149.
 
 (/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dicti
 onary/translator-basic-dictionary-English.dict
@@ -917,7 +917,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 tionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 148.
+LaTeX Info: Redefining \includegraphics on input line 149.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (./windy_day.nav)
@@ -926,26 +926,83 @@ Overfull \vbox (32.77113pt too high) has occurred while \output is active []
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 152.
+(Font)              size <5> substituted on input line 153.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./DAMTP_logo.png>]
-<barchan_pair.png, id=54, 1518.473pt x 1205.303pt>
+<barchan_pair.png, id=55, 1518.473pt x 1205.303pt>
 File: barchan_pair.png Graphic file (type png)
  <use barchan_pair.png>
-Package pdftex.def Info: barchan_pair.png used on input line 225.
+Package pdftex.def Info: barchan_pair.png used on input line 226.
 (pdftex.def)             Requested size: 145.67592pt x 115.62685pt.
 
-<Afgan_ripples_Kempf.png, id=56, 20.64857pt x 13.35274pt>
+<Afgan_ripples_Kempf.png, id=57, 20.64857pt x 13.35274pt>
 File: Afgan_ripples_Kempf.png Graphic file (type png)
 
 <use Afgan_ripples_Kempf.png>
-Package pdftex.def Info: Afgan_ripples_Kempf.png used on input line 225.
+Package pdftex.def Info: Afgan_ripples_Kempf.png used on input line 226.
 (pdftex.def)             Requested size: 145.67592pt x 94.23961pt.
  [2
 
- <./barchan_pair.png> <./Afgan_ripples_Kempf.png (PNG copy)>] [3
+ <./barchan_pair.png> <./Afgan_ripples_Kempf.png (PNG copy)>] <sed_trans.png, i
+d=87, 366.168pt x 184.69pt>
+File: sed_trans.png Graphic file (type png)
+
+<use sed_trans.png>
+Package pdftex.def Info: sed_trans.png used on input line 324.
+(pdftex.def)             Requested size: 145.67592pt x 73.47733pt.
+ [3
+
+ <./sed_trans.png>] [4
+
+] (./phase_shift.tex
+Package epstopdf Info: Source file: <phase_shift.eps>
+(epstopdf)                    date: 2016-10-23 16:54:09
+(epstopdf)                    size: 18594 bytes
+(epstopdf)             Output file: <phase_shift-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-10-23 16:53:58
+(epstopdf)                    size: 4236 bytes
+(epstopdf)             Command: <epstopdf --outfile=phase_shift-eps-converted-t
+o.pdf phase_shift.eps>
+(epstopdf)             \includegraphics on input line 96.
+runsystem(epstopdf --outfile=phase_shift-eps-converted-to.pdf phase_shift.eps).
+..executed.
+
+Package epstopdf Info: Result file: <phase_shift-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-10-23 16:54:10
+(epstopdf)                    size: 4236 bytes.
+
+<phase_shift-eps-converted-to.pdf, id=149, 361.35pt x 252.945pt>
+File: phase_shift-eps-converted-to.pdf Graphic file (type pdf)
+
+<use phase_shift-eps-converted-to.pdf>
+Package pdftex.def Info: phase_shift-eps-converted-to.pdf used on input line 96
+.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+) [5
+
+ <./phase_shift-eps-converted-to.pdf>] <annular_flume.png, id=180, 640.794pt x 
+402.303pt>
+File: annular_flume.png Graphic file (type png)
+ <use annular_flume.png>
+Package pdftex.def Info: annular_flume.png used on input line 474.
+(pdftex.def)             Requested size: 163.8868pt x 102.88976pt.
+
+<filled_annular_flume.png, id=181, 853.589pt x 546.843pt>
+File: filled_annular_flume.png Graphic file (type png)
+
+<use filled_annular_flume.png>
+Package pdftex.def Info: filled_annular_flume.png used on input line 474.
+(pdftex.def)             Requested size: 163.8868pt x 104.98598pt.
+ [6
+
+ <./annular_flume.png> <./filled_annular_flume.png>]
+File: filled_annular_flume.png Graphic file (type png)
+ <use filled_annular_flume.png>
+Package pdftex.def Info: filled_annular_flume.png used on input line 485.
+(pdftex.def)             Requested size: 182.09767pt x 116.65944pt.
+ [7
 
 ]
 \tf@nav=\write6
@@ -957,11 +1014,11 @@ Package pdftex.def Info: Afgan_ripples_Kempf.png used on input line 225.
 \tf@snm=\write8
 \openout8 = `windy_day.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 488.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 488.
  (./windy_day.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 235.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 235.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 488.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 488.
 Package rerunfilecheck Info: File `windy_day.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -969,26 +1026,31 @@ Package rerunfilecheck Info: File `windy_day.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 235.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 488.
  ) 
 Here is how much of TeX's memory you used:
- 16926 strings out of 494327
- 314383 string characters out of 6167770
- 393849 words of memory out of 5000000
- 19757 multiletter control sequences out of 15000+600000
- 10858 words of font info for 40 fonts, out of 8000000 for 9000
+ 17088 strings out of 494327
+ 317733 string characters out of 6167770
+ 397858 words of memory out of 5000000
+ 19889 multiletter control sequences out of 15000+600000
+ 15826 words of font info for 59 fonts, out of 8000000 for 9000
  505 hyphenation exceptions out of 8191
- 49i,16n,53p,398b,584s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on windy_day.pdf (3 pages, 5605905 bytes).
+ 49i,16n,57p,398b,828s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy8.pfb>
+Output written on windy_day.pdf (7 pages, 5752133 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
- 7 named destinations out of 1000 (max. 500000)
- 80 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 277 PDF objects out of 1000 (max. 8388607)
+ 230 compressed objects within 3 object streams
+ 15 named destinations out of 1000 (max. 500000)
+ 112 words of extra memory for PDF output out of 10000 (max. 10000000)
 
