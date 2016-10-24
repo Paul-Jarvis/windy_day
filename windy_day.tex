@@ -88,6 +88,7 @@
 \usepackage{epstopdf}
 \usepackage{bigints}
 \usepackage{amsmath}
+\usepackage{hyperref}
 
 \newcommand\Bo{\mbox{\textit{Bo}}}  % Bond number
 \newcommand\Rey{\mbox{\textit{Re}}}  % Bond number
@@ -588,6 +589,90 @@
 
 \end{frame}
 %-----------------------------------------------
+
+\begin{frame}
+  \frametitle{Results - Profile evolution}
+
+  \vspace{-1cm}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.3\paperwidth}
+
+      \centering
+
+      $U = 0.55$ m s$^{-1}$
+
+      \movie{\includegraphics[width=\textwidth]{omega=1_1.png}}{omega=1_1.mpg}
+
+      \vspace{1cm}
+
+      $U = 0.70$ m s$^{-1}$
+
+      \movie{\includegraphics[width=\textwidth]{omega=1_4.png}}{omega=1_4.mpg}
+
+    \end{column}
+
+    \begin{column}{0.3\paperwidth}
+
+      \centering
+
+      $U = 0.60$ m s$^{-1}$
+
+      \movie{\includegraphics[width=\textwidth]{omega=1_2.png}}{omega=1_2.mpg}
+
+      \vspace{1cm}
+
+      $U = 0.75$ m s$^{-1}$
+
+      \movie{\includegraphics[width=\textwidth]{omega=1_5.png}}{omega=1_5.mpg}
+
+    \end{column}
+
+    \begin{column}{0.3\paperwidth}
+
+      \centering
+
+      $U = 0.65$ m s$^{-1}$
+
+      \movie{\includegraphics[width=\textwidth]{omega=1_3.png}}{omega=1_3.mpg}
+
+      \vspace{1cm}
+
+      $U = 0.80$ m s$^{-1}$
+
+      \movie{\includegraphics[width=\textwidth]{omega=1_6.png}}{omega=1_6.mpg}
+
+    \end{column}
+
+
+  \end{columns}
+  
+\end{frame}
+%-----------------------------------------------
+
+\begin{frame}
+  \frametitle{Results - Initial formation}
+
+  \centering  $U = 0.85$ m s$^{-1}$, 4 s intervals for 100 s
+
+  \resizebox{0.9\textwidth}{!}{\input{init.tex}}
+
+  
+\end{frame}
+%-----------------------------------------------
+
+\begin{frame}
+  \frametitle{Results - Growth}
+
+  \centering  $U = 0.7$ m s$^{-1}$, 45 s intervals for 900 s
+
+  \resizebox{0.9\textwidth}{!}{\input{growth.tex}}
+
+  
+\end{frame}
+%-----------------------------------------------
+
 
 
 \end{document}
