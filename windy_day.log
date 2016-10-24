@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.2)  23 OCT 2016 16:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.2)  24 OCT 2016 11:02
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -958,10 +958,10 @@ Package pdftex.def Info: sed_trans.png used on input line 324.
 
 ] (./phase_shift.tex
 Package epstopdf Info: Source file: <phase_shift.eps>
-(epstopdf)                    date: 2016-10-23 16:54:09
+(epstopdf)                    date: 2016-10-24 11:02:17
 (epstopdf)                    size: 18594 bytes
 (epstopdf)             Output file: <phase_shift-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-10-23 16:53:58
+(epstopdf)                    date: 2016-10-24 11:02:03
 (epstopdf)                    size: 4236 bytes
 (epstopdf)             Command: <epstopdf --outfile=phase_shift-eps-converted-t
 o.pdf phase_shift.eps>
@@ -970,7 +970,7 @@ runsystem(epstopdf --outfile=phase_shift-eps-converted-to.pdf phase_shift.eps).
 ..executed.
 
 Package epstopdf Info: Result file: <phase_shift-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-10-23 16:54:10
+(epstopdf)                    date: 2016-10-24 11:02:18
 (epstopdf)                    size: 4236 bytes.
 
 <phase_shift-eps-converted-to.pdf, id=149, 361.35pt x 252.945pt>
@@ -986,25 +986,67 @@ Package pdftex.def Info: phase_shift-eps-converted-to.pdf used on input line 96
 402.303pt>
 File: annular_flume.png Graphic file (type png)
  <use annular_flume.png>
-Package pdftex.def Info: annular_flume.png used on input line 474.
+Package pdftex.def Info: annular_flume.png used on input line 482.
 (pdftex.def)             Requested size: 163.8868pt x 102.88976pt.
 
 <filled_annular_flume.png, id=181, 853.589pt x 546.843pt>
 File: filled_annular_flume.png Graphic file (type png)
 
 <use filled_annular_flume.png>
-Package pdftex.def Info: filled_annular_flume.png used on input line 474.
+Package pdftex.def Info: filled_annular_flume.png used on input line 482.
 (pdftex.def)             Requested size: 163.8868pt x 104.98598pt.
+ <flume_pic.JPG, id=182, 4304.08pt x 2858.68pt>
+File: flume_pic.JPG Graphic file (type jpg)
+
+<use flume_pic.JPG>
+Package pdftex.def Info: flume_pic.JPG used on input line 482.
+(pdftex.def)             Requested size: 163.8868pt x 108.83162pt.
  [6
 
- <./annular_flume.png> <./filled_annular_flume.png>]
-File: filled_annular_flume.png Graphic file (type png)
- <use filled_annular_flume.png>
-Package pdftex.def Info: filled_annular_flume.png used on input line 485.
-(pdftex.def)             Requested size: 182.09767pt x 116.65944pt.
+ <./annular_flume.png> <./filled_annular_flume.png> <./flume_pic.JPG>] <first_f
+rame.jpg, id=211, 1284.8pt x 722.7pt>
+File: first_frame.jpg Graphic file (type jpg)
+
+<use first_frame.jpg>
+Package pdftex.def Info: first_frame.jpg used on input line 545.
+(pdftex.def)             Requested size: 163.8868pt x 92.17886pt.
+ <transient_frame2.jpg, id=212, 1284.8pt x 722.7pt>
+File: transient_frame2.jpg Graphic file (type jpg)
+
+<use transient_frame2.jpg>
+Package pdftex.def Info: transient_frame2.jpg used on input line 545.
+(pdftex.def)             Requested size: 163.8868pt x 92.17886pt.
+ <transient_frame1.jpg, id=213, 1284.8pt x 722.7pt>
+File: transient_frame1.jpg Graphic file (type jpg)
+
+<use transient_frame1.jpg>
+Package pdftex.def Info: transient_frame1.jpg used on input line 545.
+(pdftex.def)             Requested size: 163.8868pt x 92.17886pt.
+ <final_frame.jpg, id=214, 1284.8pt x 722.7pt>
+File: final_frame.jpg Graphic file (type jpg)
+
+<use final_frame.jpg>
+Package pdftex.def Info: final_frame.jpg used on input line 545.
+(pdftex.def)             Requested size: 163.8868pt x 92.17886pt.
  [7
 
-]
+ <./first_frame.jpg> <./transient_frame2.jpg> <./transient_frame1.jpg> <./final
+_frame.jpg>]
+<ISVI_capture.png, id=241, 583.781pt x 474.573pt>
+File: ISVI_capture.png Graphic file (type png)
+ <use ISVI_capture.png>
+Package pdftex.def Info: ISVI_capture.png used on input line 589.
+(pdftex.def)             Requested size: 163.8868pt x 133.22711pt.
+
+<ISVI_examples.png, id=242, 441.65pt x 1053.536pt>
+File: ISVI_examples.png Graphic file (type png)
+ <use ISVI_examples.png>
+Package pdftex.def Info: ISVI_examples.png used on input line 589.
+(pdftex.def)             Requested size: 61.91254pt x 147.68694pt.
+
+[8
+
+ <./ISVI_capture.png> <./ISVI_examples.png>]
 \tf@nav=\write6
 \openout6 = `windy_day.nav'.
 
@@ -1014,11 +1056,11 @@ Package pdftex.def Info: filled_annular_flume.png used on input line 485.
 \tf@snm=\write8
 \openout8 = `windy_day.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 488.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 488.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 593.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 593.
  (./windy_day.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 488.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 488.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 593.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 593.
 Package rerunfilecheck Info: File `windy_day.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1026,13 +1068,13 @@ Package rerunfilecheck Info: File `windy_day.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 488.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 593.
  ) 
 Here is how much of TeX's memory you used:
- 17088 strings out of 494327
- 317733 string characters out of 6167770
+ 17127 strings out of 494327
+ 318479 string characters out of 6167770
  397858 words of memory out of 5000000
- 19889 multiletter control sequences out of 15000+600000
+ 19919 multiletter control sequences out of 15000+600000
  15826 words of font info for 59 fonts, out of 8000000 for 9000
  505 hyphenation exceptions out of 8191
  49i,16n,57p,398b,828s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1047,10 +1089,10 @@ pe1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy8.pfb>
-Output written on windy_day.pdf (7 pages, 5752133 bytes).
+Output written on windy_day.pdf (8 pages, 11633961 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
- 230 compressed objects within 3 object streams
- 15 named destinations out of 1000 (max. 500000)
- 112 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 312 PDF objects out of 1000 (max. 8388607)
+ 255 compressed objects within 3 object streams
+ 17 named destinations out of 1000 (max. 500000)
+ 147 words of extra memory for PDF output out of 10000 (max. 10000000)
 
